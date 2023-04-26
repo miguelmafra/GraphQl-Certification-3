@@ -8,6 +8,7 @@ const resolvers = {
     track: (_, {id}, {dataSources}) => {
       return dataSources.trackAPI.getTrack(id);
     },
+
   },
   
 
@@ -18,7 +19,9 @@ const resolvers = {
     modules: ({id}, _, {dataSources}) => {
       return dataSources.trackAPI.getTrackModules(id);
     },
+
   },
+
 };
 
 module.exports = resolvers;
